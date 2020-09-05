@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+.location-header {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 55px;
+}
+
+.location {
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location-address {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 500px) {
+  .location-icon {
+    margin-bottom: 0px !important;
+  }
+  .location-address {
+    margin-top: 75px;
+  }
+}
+
+.location-address-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  margin-top: -60px !important;
+}
