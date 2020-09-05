@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+.FAQ-header {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 55px;
+}
+
+.FAQ-grid {
+  overflow: scroll !important;
+  height: 450px !important;
+  margin-bottom: 60px;
+}
+
+.hide {
+  display: none;
+}
