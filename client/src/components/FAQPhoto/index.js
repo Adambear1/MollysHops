@@ -1,4 +1,8 @@
 import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "./styles.css";
+import "swiper/swiper.scss";
+// Import Swiper styles
 
 function FAQPhoto() {
   useEffect(() => {
@@ -10,7 +14,24 @@ function FAQPhoto() {
       },
     });
   }, []);
-  return <div></div>;
+  return (
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  );
 }
 
 export default FAQPhoto;
