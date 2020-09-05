@@ -1,10 +1,18 @@
 {
   "name": "MollysHops",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Hops Business",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +24,17 @@
   "bugs": {
     "url": "https://github.com/Adambear1/MollysHops/issues"
   },
-  "homepage": "https://github.com/Adambear1/MollysHops#readme"
+  "homepage": "https://github.com/Adambear1/MollysHops#readme",
+  "dependencies": {
+    "config": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "if-env": "^1.0.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.4"
+  }
 }
