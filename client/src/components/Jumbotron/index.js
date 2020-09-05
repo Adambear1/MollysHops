@@ -6,7 +6,7 @@ import video2 from "../../assets/videos/video2.mp4";
 
 function Jumbotron() {
   return (
-    <div class="slider carousel carousel-jumbotron">
+    <div class="slider carousel carousel-jumbotron  animate__animated  animate__fadeIn">
       <div class="slide1">
         <video src={video} autoPlay={true} muted={true} loop={true} />
       </div>

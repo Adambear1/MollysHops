@@ -10,7 +10,7 @@ function FAQCards(props) {
     document.getElementsByClassName(`${e.target.id}`)[0].classList.add("hide");
   }
   return (
-    <div class="card">
+    <div class="card animate__animated  animate__fadeIn">
       <div
         class={`card-image waves-effect waves-block waves-light card-image-FAQ ${props.index} hide`}
       >

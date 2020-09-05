@@ -1,0 +1,21 @@
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mobile-nav-li {
+    display: inline;
+    margin: 20px;
+  }
+  .mobile-nav {
+    display: block;
+    padding: 8px 5px 5px 5px;
+    margin-bottom: -20px;
+    border-radius: 10px;
+    border: 2px solid rgb(45, 32, 19);
+    background-color: rgb(109, 76, 65);
+  }
+  .mobile-nav-li a {
+    color: white;
+  }
+}

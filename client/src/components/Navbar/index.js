@@ -5,8 +5,8 @@ import "./styles.css";
 function Navbar() {
   return (
     <nav>
-      <div className=" brown darken-1 nav-wrapper">
-        <a href="/" className="brand-logo center">
+      <div className="brown darken-1 nav-wrapper ">
+        <a href="/" className="brand-logo center  ">
           <img src={logo} />
         </a>
         <ul className="right hide-on-med-and-down">

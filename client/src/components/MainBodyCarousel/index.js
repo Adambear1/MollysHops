@@ -17,11 +17,11 @@ function MainBodyCarousel() {
         class="gallery js-flickity"
         data-flickity-options='{ "wrapAround": true }'
       >
-        <div class="gallery-cell">
-          <img class="main-photo" src={image} />
-        </div>
-        <div class="gallery-cell">
+        <div class="gallery-cell animate__animated  animate__fadeInUp">
           <img class="main-photo" src={logo} />
+        </div>
+        <div class="gallery-cell animate__animated  animate__fadeInRight">
+          <img class="main-photo" src={image} />
         </div>
         <div class="gallery-cell">
           <img class="main-photo" src={image1} />
@@ -38,7 +38,7 @@ function MainBodyCarousel() {
         <div class="gallery-cell">
           <img class="main-photo" src={image5} />
         </div>
-        <div class="gallery-cell">
+        <div class="gallery-cell animate__animated  animate__fadeInLeft">
           <img class="main-photo" src={image6} />
         </div>
       </div>

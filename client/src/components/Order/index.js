@@ -61,7 +61,7 @@ function Order() {
       });
   }
   return (
-    <div id="order-modal" className="modal">
+    <div id="order-modal animate__animated  animate__fadeIn" className="modal">
       <div className="modal-content">
         <div className="modal-close" styles="font-size:20px!important">
           x
