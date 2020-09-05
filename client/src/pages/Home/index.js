@@ -11,9 +11,7 @@ function Home() {
       <Order />
 
       <Location />
-
       <FAQ />
-
       <About />
     </div>
   );
