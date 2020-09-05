@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./styles.css";
 function Footer() {
   return (
     <footer className="brown darken-1 page-footer">
@@ -15,23 +15,35 @@ function Footer() {
           <div className="col l4 offset-l2 s12">
             <h5 className="white-text">Links</h5>
             <ul>
-              <li>
-                <a className="grey-text text-lighten-3" href="#!">
+              <li className="footer-links">
+                <a
+                  className="grey-text text-lighten-3 modal-trigger"
+                  href="#order-modal"
+                >
                   Order
                 </a>
               </li>
-              <li>
-                <a className="grey-text text-lighten-3" href="#!">
+              <li className="footer-links">
+                <a
+                  className="grey-text text-lighten-3 modal-trigger"
+                  href="#location-modal"
+                >
                   Location
                 </a>
               </li>
-              <li>
-                <a className="grey-text text-lighten-3" href="#!">
+              <li className="footer-links">
+                <a
+                  className="grey-text text-lighten-3 modal-trigger"
+                  href="#faq-modal"
+                >
                   Inquire
                 </a>
               </li>
-              <li>
-                <a className="grey-text text-lighten-3" href="#!">
+              <li className="footer-links">
+                <a
+                  className="grey-text text-lighten-3 modal-trigger"
+                  href="#about-modal"
+                >
                   About
                 </a>
               </li>

@@ -3,52 +3,53 @@
   z-index: -1;
 }
 
-.carousel {
+.carousel-jumbotron {
   height: 635px !important;
   margin-bottom: 5px !important;
   z-index: -10;
 }
 
 @media (max-width: 500px) {
-  .carousel {
+  .carousel-jumbotron {
     height: 210px !important;
   }
 }
 
 .slide1,
 .slide2,
-.slide3,
-.slide4,
-.slide5 {
+.slide3 {
   z-index: -10;
   position: absolute;
   width: 100% !important;
   height: 100% !important;
 }
-.slide1 {
+
+@media (max-width: 390px) {
+  video,
+  .slide1,
+  .slide2,
+  .slide3 {
+    height: 350px !important;
+  }
+}
+video {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   object-position: center;
   object-fit: fill;
+  display: block;
+  margin: 0 auto;
+}
+.slide1 {
   animation: fade 8s infinite;
   -webkit-animation: fade 8s infinite;
 }
 .slide2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  object-position: center;
-  object-fit: fill;
   animation: fade2 8s infinite;
   -webkit-animation: fade2 8s infinite;
 }
 .slide3 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  object-position: center;
-  object-fit: fill;
   animation: fade3 8s infinite;
   -webkit-animation: fade3 8s infinite;
 }

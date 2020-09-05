@@ -1,10 +1,5 @@
-import React, { useEffect, useState } from "react";
-// import {
-//   GoogleMap,
-//   withScriptjs,
-//   withGoogleMap,
-//   Marker,
-// } from "react-google-maps";
+import React from "react";
+
 import "./styles.css";
 import gmaps from "./images/gmaps.png";
 

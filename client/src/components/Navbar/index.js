@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo_placeholder.png";
 import "./styles.css";
-import { Link } from "react-scroll";
 
 function Navbar() {
   return (

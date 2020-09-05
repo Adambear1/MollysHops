@@ -1,0 +1,7 @@
+@media (max-width: 380px) {
+  .footer-links {
+    display: inline;
+    margin: 3px 4%;
+    margin-bottom: -20px;
+  }
+}
