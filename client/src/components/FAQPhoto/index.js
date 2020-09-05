@@ -1,13 +1,16 @@
-import React from "react";
-import photo from "./mollyshops.jpg";
-import "./styles.css";
+import React, { useEffect } from "react";
 
 function FAQPhoto() {
-  return (
-    <div className="FAQphoto-container">
-      <img className="materialboxed FAQphoto" src={photo} />
-    </div>
-  );
+  useEffect(() => {
+    var swiper = new Swiper(".swiper-container", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }, []);
+  return <div></div>;
 }
 
 export default FAQPhoto;

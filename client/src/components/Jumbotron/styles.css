@@ -4,7 +4,7 @@
 }
 
 .carousel {
-  height: 590px !important;
+  height: 635px !important;
   margin-bottom: 5px !important;
   z-index: -10;
 }
@@ -26,23 +26,29 @@
   height: 100% !important;
 }
 .slide1 {
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-position: center;
+  object-fit: fill;
   animation: fade 8s infinite;
   -webkit-animation: fade 8s infinite;
 }
 .slide2 {
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-position: center;
+  object-fit: fill;
   animation: fade2 8s infinite;
   -webkit-animation: fade2 8s infinite;
 }
 .slide3 {
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-position: center;
+  object-fit: fill;
   animation: fade3 8s infinite;
   -webkit-animation: fade3 8s infinite;
 }

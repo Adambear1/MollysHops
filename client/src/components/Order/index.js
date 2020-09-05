@@ -20,7 +20,7 @@ function Order() {
       var elems = document.querySelectorAll(".modal");
       var instances = M.Modal.init(elems);
     });
-  });
+  }, []);
   function formChange(e) {
     setOrder({
       ...order,

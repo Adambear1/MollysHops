@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutCards from "../FAQCards/index.js";
 import FAQPhoto from "../FAQPhoto/index.js";
+import M from "materialize-css";
 import "./styles.css";
 
 function FAQ() {
@@ -105,6 +106,12 @@ function FAQ() {
       ],
     },
   ];
+  useEffect(() => {
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".modal");
+      var instances = M.Modal.init(elems);
+    });
+  }, []);
   return (
     <div id="faq-modal" class="modal">
       <div class="modal-content">

@@ -22,7 +22,13 @@ function About() {
       var elems = document.querySelectorAll(".collapsible");
       var instances = M.Collapsible.init(elems);
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".modal");
+      var instances = M.Modal.init(elems);
+    });
   }, []);
+
   return (
     <div id="about-modal" class="modal">
       <div class="modal-content">
