@@ -25,13 +25,10 @@ import gmaps from "./images/gmaps.png";
 export default function Location() {
   return (
     <div className="location-div">
-      <div
-        className="location"
-        id="location"
-        style={{ width: "70vw", height: "70vh" }}
-      >
-        <h4 className="location-header card-content valign center">Location</h4>
-        <img src={gmaps} />
+      <div className="row">
+        <div className="col s12">
+          <img class="location" src={gmaps} />
+        </div>
         {/* <WrappedMap
           googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_G_KEY}`}
           loadingElement={<div style={{ height: "100%" }} />}

@@ -6,6 +6,7 @@
 .carousel {
   height: 590px !important;
   margin-bottom: 5px !important;
+  z-index: -10;
 }
 
 @media (max-width: 500px) {
@@ -14,55 +15,76 @@
   }
 }
 
-@keyframes flickerAnimation {
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+  z-index: -10;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
+.slide1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade 8s infinite;
+  -webkit-animation: fade 8s infinite;
+}
+.slide2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade2 8s infinite;
+  -webkit-animation: fade2 8s infinite;
+}
+.slide3 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fade3 8s infinite;
+  -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade {
   0% {
     opacity: 1;
   }
-  50% {
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
 }
-@-o-keyframes flickerAnimation {
+@keyframes fade2 {
   0% {
+    opacity: 0;
+  }
+  33.333% {
     opacity: 1;
   }
-  50% {
+  66.666% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
 }
-@-webkit-keyframes flickerAnimation {
+@keyframes fade3 {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
-  100% {
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
     opacity: 1;
   }
-}
-.animate-flicker {
-  height: 81.5vh !important;
-  width: 100%;
-  -webkit-animation: flickerAnimation 5s infinite;
-  -moz-animation: flickerAnimation 5s infinite;
-  -o-animation: flickerAnimation 5s infinite;
-  animation: flickerAnimation 5s infinite;
+  100% {
+    opacity: 0;
+  }
 }
