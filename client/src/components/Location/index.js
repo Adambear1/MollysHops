@@ -8,41 +8,31 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import gmaps from "./images/gmaps.png";
 
-// function Map() {
-//   return (
-//     <div>
-//       <GoogleMap
-//         defaultZoom={10}
-//         defaultCenter={{ lat: 47.2529, lng: -122.4443 }}
-//       >
-//         <Marker position={{ lat: 47.14777, lng: -122.37884 }} />
-//       </GoogleMap>
-//     </div>
-//   );
-// }
-// const WrappedMap = withScriptjs(withGoogleMap(Map));
-
 export default function Location() {
   return (
-    <div className="location-div">
-      <div className="row">
-        <div className="col s12">
-          <img class="location" src={gmaps} />
+    <div id="location-modal" class="modal location-modal">
+      <div class="modal-content location-modal-content">
+        <div className="location-div">
+          <div className="row">
+            <div className="col s12">
+              <img class="location-image" src={gmaps} />
+            </div>
+          </div>
+          <div className="location-address-container">
+            <div className="center-align">
+              <i class="material-icons location-icon">location_on</i>
+            </div>
+            <a
+              href="https://www.google.com/maps/place/11924+Vickery+Ave+E,+Tacoma,+WA+98446/@47.1755804,-122.4263896,10.78z/data=!4m5!3m4!1s0x5490fdf615f52a5f:0x8bf9a4e304bd283d!8m2!3d47.1477642!4d-122.3788165"
+              target="_blank"
+            >
+              <p className=" center-align location-address">
+                Molly's Hops <br />
+                11924 Vickery Avenue East, Tacoma WA 98405
+              </p>
+            </a>
+          </div>
         </div>
-        {/* <WrappedMap
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_G_KEY}`}
-          loadingElement={<div style={{ height: "100%" }} />}
-          containerElement={<div style={{ height: "100%" }} />}
-          mapElement={<div style={{ height: "100%" }} />}
-        /> */}
-      </div>
-      <div className="location-address-container">
-        <div className="center-align">
-          <i class="material-icons location-icon">location_on</i>
-        </div>
-        <p className=" center-align location-address">
-          Watertown Hops Company 1224 American Way Watertown, WI 53094
-        </p>
       </div>
     </div>
   );

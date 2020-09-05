@@ -24,40 +24,44 @@ function About() {
     });
   }, []);
   return (
-    <div id="about" className="container">
-      <h4 id="FAQ" className="FAQ-header card-content valign center">
-        About
-      </h4>
-      <ul className="collapsible">
-        <li className="active">
-          <div className="collapsible-header">
-            <i className="material-icons">filter_drama</i>Mission Statement
-          </div>
-          <div className="collapsible-body">
-            <span>
-              <AboutCard image={info[0].image} text={info[0].text} />
-            </span>
-          </div>
-        </li>
-        <li>
-          <div className="collapsible-header">
-            <i className="material-icons">place</i>History
-          </div>
-          <div className="collapsible-body">
-            <span>
-              <AboutCard image={info[1].image} text={info[1].text} />
-            </span>
-          </div>
-        </li>
-        <li>
-          <div className="collapsible-header">
-            <i className="material-icons">whatshot</i>About
-          </div>
-          <div className="collapsible-body">
-            <span>Lorem ipsum dolor sit amet.</span>
-          </div>
-        </li>
-      </ul>
+    <div id="about-modal" class="modal">
+      <div class="modal-content">
+        <div id="about" className="container">
+          <h4 id="FAQ" className="FAQ-header card-content valign center">
+            About
+          </h4>
+          <ul className="collapsible">
+            <li className="active">
+              <div className="collapsible-header">
+                <i className="material-icons">filter_drama</i>Mission Statement
+              </div>
+              <div className="collapsible-body">
+                <span>
+                  <AboutCard image={info[0].image} text={info[0].text} />
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="collapsible-header">
+                <i className="material-icons">place</i>History
+              </div>
+              <div className="collapsible-body">
+                <span>
+                  <AboutCard image={info[1].image} text={info[1].text} />
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="collapsible-header">
+                <i className="material-icons">whatshot</i>About
+              </div>
+              <div className="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

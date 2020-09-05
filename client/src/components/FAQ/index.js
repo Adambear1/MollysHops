@@ -91,7 +91,7 @@ function FAQ() {
       ],
     },
     {
-      title: "Hops (Types",
+      title: "Hops (Types)",
       index: 4,
       qa: [
         {
@@ -106,21 +106,29 @@ function FAQ() {
     },
   ];
   return (
-    <div className="FAQ-div">
-      <h4 id="FAQ" className="FAQ-header card-content valign center">
-        FAQ
-      </h4>
-      <div className="row">
-        <div className="FAQ-grid col s12 m6">
-          {info.map((item) => {
-            return (
-              <AboutCards title={item.title} qa={item.qa} index={item.index} />
-            );
-          })}
-        </div>
+    <div id="faq-modal" class="modal">
+      <div class="modal-content">
+        <div className="FAQ-div">
+          <h4 id="FAQ" className="FAQ-header card-content valign center">
+            FAQ
+          </h4>
+          <div className="row">
+            <div className="FAQ-grid col s12 m6">
+              {info.map((item) => {
+                return (
+                  <AboutCards
+                    title={item.title}
+                    qa={item.qa}
+                    index={item.index}
+                  />
+                );
+              })}
+            </div>
 
-        <div className="col s12 m6">
-          <FAQPhoto />
+            <div className="col s12 m6">
+              <FAQPhoto />
+            </div>
+          </div>
         </div>
       </div>
     </div>

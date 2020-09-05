@@ -12,32 +12,32 @@ function Navbar() {
         </a>
         <ul className="right hide-on-med-and-down">
           <li>
-            <Link to="order" spy={true} smooth={true} duration={500}>
+            <a className="modal-trigger" href="#order-modal">
               <i className="material-icons" title="Order">
                 add_shopping_cart
               </i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="location" spy={true} smooth={true} duration={500}>
+            <a className="modal-trigger" href="#location-modal">
               <i className="material-icons" title="Location">
                 map
               </i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="FAQ" spy={true} smooth={true} duration={500}>
+            <a className="modal-trigger" href="#faq-modal">
               <i className="material-icons" title="FAQ">
                 question_answer
               </i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="about" spy={true} smooth={true} duration={500}>
+            <a className="modal-trigger" href="#about-modal">
               <i className="material-icons" title="About Us">
                 person_pin
               </i>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
