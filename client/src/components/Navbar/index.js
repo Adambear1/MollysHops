@@ -1,5 +1,5 @@
 import React from "react";
-// import logo from "../../assets/images/logo_placeholder.png";
+import logo from "../../assets/images/logo_placeholder.png";
 import "./styles.css";
 import { Link } from "react-scroll";
 
@@ -8,7 +8,7 @@ function Navbar() {
     <nav>
       <div className=" brown darken-1 nav-wrapper">
         <a href="/" className="brand-logo center">
-          {/* <img src={logo} /> */}
+          <img src={logo} />
         </a>
         <ul className="right hide-on-med-and-down">
           <li>
