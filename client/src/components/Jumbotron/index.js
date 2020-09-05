@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import "./styles.css";
-import video from "./video.mp4";
-import "pure-react-carousel/dist/react-carousel.es.css";
+// import video from "./video.mp4";
 
 function Jumbotron() {
   // useEffect(() => {
@@ -23,7 +22,7 @@ function Jumbotron() {
         loop={true}
         preload={true}
       >
-        <source src={video} type="video/mp4" />
+        {/* <source src={video} type="video/mp4" /> */}
       </video>
     </div>
   );
