@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import M from "materialize-css";
+import React from "react";
 import "./styles.css";
 import logo from "./images/mollyshops.jpg";
 import image from "./images/hops.jpg";

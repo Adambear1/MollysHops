@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import Order from "./components/Order";
@@ -7,16 +7,35 @@ import FAQ from "./components/FAQ";
 import About from "./components/About";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import M from "materialize-css";
+import "./styles.css";
 
 function App() {
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".modal");
-      var instances = M.Modal.init(elems);
-    });
-  }, []);
+    switch (document.readyState) {
+      case "loading":
+        console.log("loading");
+        setLoading(true);
+      case "interactive":
+        console.log("interactive");
+        setLoading(true);
+      case "complete":
+        setTimeout(() => {
+          console.log("complete");
+          setLoading(false);
+        }, 900);
+
+      default:
+        setTimeout(() => {
+          setLoading(false);
+        }, 900);
+    }
+  }, [document.readyState]);
+
   return (
+    // loading === true ? (
+    //   <div class="loader"></div>
+    // ) :
     <>
       <Navbar />
       <Jumbotron />
