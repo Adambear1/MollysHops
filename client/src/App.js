@@ -7,6 +7,7 @@ import FAQ from "./components/FAQ";
 import About from "./components/About";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import M from "materialize-css";
 import "./styles.css";
 
 function App() {

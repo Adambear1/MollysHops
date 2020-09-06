@@ -11,6 +11,7 @@ function Order() {
   const [pickup, setPickup] = useState();
   const [hops, setHops] = useState([]);
   const [order, setOrder] = useState({});
+
   useEffect(() => {
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll("select");
@@ -20,7 +21,7 @@ function Order() {
       var elems = document.querySelectorAll(".modal");
       var instances = M.Modal.init(elems);
     });
-  }, ["DOMContentLoaded"]);
+  }, []);
   function formChange(e) {
     setOrder({
       ...order,
