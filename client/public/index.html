@@ -41,9 +41,10 @@
     <script>
       
   document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
     var instances = M.FormSelect.init(document.querySelectorAll("select"));
-    var instances = M.Modal.init(elems);
+    var instances = M.Modal.init(document.querySelectorAll('.modal'))
+    var instances = M.Collapsible.init(document.querySelectorAll('.collapsible'));
+
   });
 
     </script>

@@ -10,43 +10,39 @@ import Footer from "./components/Footer";
 import "./styles.css";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     switch (document.readyState) {
       case "loading":
-        console.log("loading");
-        setLoading(true);
+        document.querySelector(".main").classList.add("hide");
       case "interactive":
-        console.log("interactive");
-        setLoading(true);
+        document.querySelector(".main").classList.add("hide");
       case "complete":
         setTimeout(() => {
-          console.log("complete");
-          setLoading(false);
-        }, 900);
+          document.querySelector(".main").classList.remove("hide");
+          document.querySelector(".loader-spin").classList.add("hide");
+        }, 1100);
 
       default:
         setTimeout(() => {
-          setLoading(false);
-        }, 1400);
+          document.querySelector(".main").classList.remove("hide");
+          document.querySelector(".loader-spin").classList.add("hide");
+        }, 1100);
     }
   }, [document.readyState]);
 
   return (
-    // loading ? (
-    //   <div className="loader-spin"></div>
-    // ) :
-    // (
     <>
-      <Navbar />
-      <Jumbotron />
-      <Home />
-      <Order />
-      <Location />
-      <FAQ />
-      <About />
-      <Footer />
+      <div className="loader-spin"></div>
+      <div className="main">
+        <Navbar />
+        <Jumbotron />
+        <Home />
+        <Order />
+        <Location />
+        <FAQ />
+        <About />
+        <Footer />
+      </div>
     </>
   );
 }

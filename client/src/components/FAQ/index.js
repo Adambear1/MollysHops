@@ -108,14 +108,14 @@ function FAQ() {
   ];
 
   return (
-    <div id="faq-modal" class="modal">
+    <div id="faq-modal" class="modal faq-modal">
       <div class="modal-content">
         <div className="FAQ-div">
           <h4 id="FAQ" className="FAQ-header card-content valign center">
             FAQ
           </h4>
           <div className="row">
-            <div className="FAQ-grid col s12 m6">
+            <div className="FAQ-grid col s12">
               {info.map((item) => {
                 return (
                   <AboutCards
@@ -126,10 +126,10 @@ function FAQ() {
                 );
               })}
             </div>
-
+            {/* 
             <div className="col s12 m6">
               <FAQPhoto />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

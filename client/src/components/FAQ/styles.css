@@ -13,3 +13,7 @@
 .hide {
   display: none;
 }
+
+.faq-modal {
+  height: 100% !important;
+}
