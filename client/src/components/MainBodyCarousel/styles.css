@@ -40,12 +40,10 @@
   counter-increment: gallery-cell;
 }
 
-/* cell number */
-.gallery-cell:before {
+/* .gallery-cell:before {
   display: block;
   text-align: center;
-  /* content: counter(gallery-cell); */
   line-height: 750px;
   font-size: 80px;
   color: white;
-}
+} */

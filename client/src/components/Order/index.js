@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Calendar } from "react-calendar";
-import M from "materialize-css";
 import API from "../../utils/API";
 import "react-calendar/dist/Calendar.css";
 import "./styles.css";
@@ -12,16 +11,6 @@ function Order() {
   const [hops, setHops] = useState([]);
   const [order, setOrder] = useState({});
 
-  useEffect(() => {
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll("select");
-      var instances = M.FormSelect.init(elems);
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".modal");
-      var instances = M.Modal.init(elems);
-    });
-  }, []);
   function formChange(e) {
     setOrder({
       ...order,
@@ -62,7 +51,7 @@ function Order() {
       });
   }
   return (
-    <div id="order-modal animate__animated  animate__fadeIn" className="modal">
+    <div id="order-modal" className="modal ">
       <div className="modal-content">
         <div className="modal-close" styles="font-size:20px!important">
           x

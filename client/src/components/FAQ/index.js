@@ -106,12 +106,7 @@ function FAQ() {
       ],
     },
   ];
-  useEffect(() => {
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".modal");
-      var instances = M.Modal.init(elems);
-    });
-  }, []);
+
   return (
     <div id="faq-modal" class="modal">
       <div class="modal-content">

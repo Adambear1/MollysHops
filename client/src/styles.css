@@ -1,17 +1,17 @@
-.loader {
+.loader-spin {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #71db34;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 1s linear infinite; /* Safari */
-  animation: spin 1s linear infinite;
+  -webkit-animation: loader-spin 1s linear infinite;
+  animation: loader-spin 1s linear infinite;
   margin-left: auto;
   margin-right: auto;
   margin-top: 17%;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes loader-spin {
   0% {
     -webkit-transform: rotate(0deg);
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@keyframes spin {
+@keyframes loader-spin {
   0% {
     transform: rotate(0deg);
   }

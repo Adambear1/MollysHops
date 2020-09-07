@@ -7,11 +7,11 @@ import FAQ from "./components/FAQ";
 import About from "./components/About";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import M from "materialize-css";
 import "./styles.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     switch (document.readyState) {
       case "loading":
@@ -29,14 +29,15 @@ function App() {
       default:
         setTimeout(() => {
           setLoading(false);
-        }, 900);
+        }, 1400);
     }
   }, [document.readyState]);
 
   return (
-    // loading === true ? (
-    //   <div class="loader"></div>
+    // loading ? (
+    //   <div className="loader-spin"></div>
     // ) :
+    // (
     <>
       <Navbar />
       <Jumbotron />
