@@ -20,7 +20,11 @@ function FAQCards(props) {
         />
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">
+        <span
+          class="card-title activator grey-text text-darken-4"
+          id={props.index}
+          onClick={Open}
+        >
           {props.title}
           <i class="material-icons right" id={props.index} onClick={Open}>
             more_vert
@@ -28,7 +32,11 @@ function FAQCards(props) {
         </span>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4 card-back">
+        <span
+          class="card-title grey-text text-darken-4 card-back"
+          id={props.index}
+          onClick={Close}
+        >
           {props.title}
           <i class="material-icons right" id={props.index} onClick={Close}>
             close
