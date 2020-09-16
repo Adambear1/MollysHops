@@ -18,7 +18,10 @@ function MainBodyText() {
           <br />
           <br />
           Molly's Hops strives to adhere to the Hops Industry by embracing
-          ethics, values, and supreme products and services.
+          ethics, values, and supreme products and services. Being owned and
+          operated by a retired military veteran, the company strives for
+          customer satisfaction, supreme services, and an overall positive
+          family experience.
         </p>
       </div>
     </div>
