@@ -7,61 +7,40 @@ import "./styles.css";
 function FAQ() {
   let info = [
     {
-      title: "General",
+      title: "Pricing",
       index: 0,
       qa: [
         {
-          question: "What is a hop",
-          answer: "Something you brew beer with",
-        },
-        {
-          question: "How do you spell hop",
-          answer: "HOP",
-        },
-        {
-          question: "How do you spell hop",
-          answer: "HOP",
-        },
-        {
-          question: "How do you spell hop",
-          answer: "HOP",
-        },
-        {
-          question: "How do you spell hop",
-          answer: "HOP",
-        },
-        {
-          question: "How do you spell hop",
-          answer: "HOP",
-        },
-      ],
-    },
-    {
-      title: "Pricing",
-      index: 1,
-      qa: [
-        {
           question: "What is the pricing for hops?",
-          answer: "11294 Vickery Ave E, Tacoma WA 98446-3434",
+          answer:
+            "The pricing per hop varies by quantity purchased, frequency of purchases, and type of hop. For more information, please do not hesitate to reach out to one of our associates to give you a fair price for your needs.",
         },
         {
           question: "Are there any discounts available?",
-          answer: "No local only",
+          answer:
+            "Yes, we value our loyal customers and give fair discounts to those who shop with us frequently. ",
         },
         {
           question: "Am I able to buy in bulk?",
-          answer: "No, only the one in tacoma",
+          answer:
+            "Of course! Please reach out to one of our associates and we will gladly take your order.",
         },
         {
           question:
             "Are there subscriptions or memberships available for recurring purchases?",
-          answer: "No, only the one in tacoma",
+          answer:
+            "Not at the moment, but we do cherish our loyal customers and provide discounts and favorable pricing for our frequent customers.",
+        },
+        {
+          question: "Does the company allow pre-orders?",
+          answer:
+            "Yes! By simply calling, or ordering ahead of time, we can have all hops ready for pickup at a set time.",
         },
       ],
     },
     {
       title: "Location",
-      index: 2,
+      index: 1,
       qa: [
         {
           question: "Where are you located?",
@@ -69,17 +48,19 @@ function FAQ() {
         },
         {
           question: "Does the organization ship internationally?",
-          answer: "No local only",
+          answer:
+            "Not at the moment. All purchases are done locally and in sate.",
         },
         {
           question: "Are there many locations?",
-          answer: "No, only the one in tacoma",
+          answer:
+            "For being a mom-and-pop hops farm, we are currently only located in Tacoma WA at 11294 Vickery Ave E.",
         },
       ],
     },
     {
       title: "Hours",
-      index: 3,
+      index: 2,
       qa: [
         {
           question: "What are the hours of operation for Mollys Hops?",
@@ -93,15 +74,12 @@ function FAQ() {
     },
     {
       title: "Hops (Types)",
-      index: 4,
+      index: 3,
       qa: [
         {
           question: "What type of hops are there?",
-          answer: "11AM - 4PM PST",
-        },
-        {
-          question: "Are hops edible?",
-          answer: "No",
+          answer:
+            "At Molly's hops, we service 15 different types of hops: Cascades, Clusters( Meeker Hops), Haller-Taus, Goldens, Magnums, Willamette, Columbus, Chinooks, Fuggles, Mt Hoods, Comets, Sterling’s, Northern Brewers, Semco’s and Centennials",
         },
       ],
     },
